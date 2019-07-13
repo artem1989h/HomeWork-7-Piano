@@ -1,0 +1,32 @@
+body {
+    height: 600px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.key {
+    background-color: white;
+    border: gray 3px solid;
+    height: 200px;
+    width: 55px;
+    border-radius: 1em;
+    margin: 5px;
+    font-size: 2em;
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: space-around;
+    transition: all .1s ease;
+}
+
+.animation {
+    transform: scale(1.2);
+    box-shadow: 0 0 1rem #c310e2;
+    border-color: #c310e2;
+}
