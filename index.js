@@ -12,10 +12,12 @@ function playKey(e){
 function playWithMouse(e) {
     let click = document.querySelector(`.key[data-key="${e.target.dataset.key}"]`);
     let audio = document.querySelector(`audio[data-key="${e.target.dataset.key}"]`);
-    if (click == null)
+    if (click == null){
     click = document.querySelector(`.key[data-key="${e.target.parentNode.dataset.key}"]`);
-    if (audio == null) 
+    }
+    if (audio == null){
     audio =  document.querySelector(`audio[data-key="${e.target.parentNode.dataset.key}"]`);
+    }
     if (!click) return;
     click.classList.add("animation");
     audio.currentTime = 0;
